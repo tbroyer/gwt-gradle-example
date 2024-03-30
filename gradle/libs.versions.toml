@@ -1,0 +1,24 @@
+[versions]
+autoValue = "1.10.4"
+gwt = "2.11.0"
+jetty = "12.0.7"
+
+[libraries]
+autoValue-annotations = { module = "com.google.auto.value:auto-value-annotations", version.ref = "autoValue" }
+autoValue-processor = { module = "com.google.auto.value:auto-value", version.ref = "autoValue" }
+guava-bom = "com.google.guava:guava-bom:33.1.0-jre"
+guava = { module = "com.google.guava:guava" }
+guava-gwt = { module = "com.google.guava:guava-gwt" }
+gwt-bom = { module = "org.gwtproject:gwt", version.ref = "gwt" }
+gwt-user = { module = "org.gwtproject:gwt-user" }
+gwt-dev = { module = "org.gwtproject:gwt-dev" }
+# Do not use the BOM for shared and server-side projects, so include the version in the dependency
+gwt-servlet = { module = "org.gwtproject:gwt-servlet-jakarta", version.ref = "gwt" }
+jetty-bom = { module = "org.eclipse.jetty:jetty-bom", version.ref = "jetty" }
+jetty-ee10-bom = { module = "org.eclipse.jetty.ee10:jetty-ee10-bom", version.ref = "jetty" }
+jetty-servlet = { module = "org.eclipse.jetty.ee10:jetty-ee10-servlet" }
+jetty-servlets = { module = "org.eclipse.jetty.ee10:jetty-ee10-servlets" }
+
+[bundles]
+
+[plugins]

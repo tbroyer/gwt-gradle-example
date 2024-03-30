@@ -1,0 +1,7 @@
+<module>
+  <inherits name="com.google.common.annotations.Annotations" />
+  <!-- AutoValue might use these in generated code -->
+  <inherits name="com.google.common.collect.Collect" />
+
+  <source path="" />
+</module>
